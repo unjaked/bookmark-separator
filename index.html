@@ -7,7 +7,11 @@
 
     <title>Chrome Bookmarks Separator</title>
 
-    <link id="favicon" rel="icon" type="image/png" href="favicon-vert.svg" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="separator.svg" />
+
+    <!-- Import color picker Coloris -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
 
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -18,18 +22,18 @@
         <div>
             <h1>Bookmark Separator</h1>
 
-            <p>Add this page to your favorites to use as a divider for your Bookmarks bar!</p>
+            <p>
+                Add this page to your favorites to use as a divider for your Bookmarks. </br>
+                (Don't forget to leave the bookmark's name empty!)
+            </p>
 
-            <div class="buttons">
-                <p>Change the icon here ↓</p>
-                <button class="favicon-option" data-favicon="favicon-vert.svg">
-                    Vertical Line
-                </button>
+            <hr
+                style="margin: 16px; border: none; height: 1px; background: linear-gradient(to right, transparent, #888888, transparent);">
 
-                <button class="favicon-option" data-favicon="favicon-blank.svg">
-                    Blank
-                </button>
-
+            <div class="selector">
+                <label for="faviconColor">Separator Color</br></label>
+                <input id="faviconColor" class="color-input" type="text" value="rgb(255, 0, 0)" data-coloris />
+                <p class="tip">Tip: Set the opacity to 0% for a horizontal separator!</p>
             </div>
 
         </div>
@@ -37,7 +41,8 @@
 
 
     <footer>
-        <p>Made by <a href="https://github.com/unjaked/bookmark-separator">unjaked</a> on GitHub</p>
+        <p>Made by <a href="https://github.com/unjaked/bookmark-separator">@unjaked</a> on <a
+                href="https://github.com/unjaked/bookmark-separator">GitHub</a></p>
     </footer>
 
 
