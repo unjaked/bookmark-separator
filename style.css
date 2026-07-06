@@ -32,9 +32,8 @@ main {
     font-size: smaller;
     line-height: 1.2;
 
-    padding: 8px;
-    max-width: 250px;
-    margin: 0 auto;
+    max-width: 260px;
+    margin: 10px auto;
 }
 
 .color-input {

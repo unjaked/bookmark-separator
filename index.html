@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chrome Bookmarks Separator</title>
+    <!-- Zero width space (blank title) -->
+    <title>&#8203;</title>
 
     <link id="favicon" rel="icon" type="image/svg+xml" href="separator.svg" />
 
@@ -20,11 +21,10 @@
 
     <main>
         <div>
-            <h1>Bookmark Separator</h1>
+            <h1>Bookmark Divider</h1>
 
             <p>
-                Add this page to your favorites to use as a divider for your Bookmarks. </br>
-                (Don't forget to leave the bookmark's name empty!)
+                Add this page to your bookmarks to use as a divider</br>
             </p>
 
             <hr
@@ -32,8 +32,10 @@
 
             <div class="selector">
                 <label for="faviconColor">Separator Color</br></label>
-                <input id="faviconColor" class="color-input" type="text" value="rgb(255, 0, 0)" data-coloris />
-                <p class="tip">Tip: Set the opacity to 0% for a horizontal separator!</p>
+                <input id="faviconColor" class="color-input" type="text" value="rgb(94, 94, 94)" data-coloris />
+
+                <p class="tip">Tip: For a horizontal separator, set the opacity to 0% and the name to:
+                    </br>───────────</p>
             </div>
 
         </div>
